@@ -160,6 +160,41 @@ src/
 
 ---
 
+## 🧩 Troubleshooting
+
+- **No se ve el QR / sesión caída**: borra `.wa_auth` y reinicia.
+- **Videos no inline en WA**: instala FFmpeg y deja `TRANSCODE_VIDEO_FOR_WA=true`.
+- **Adjunto >16MB**: WhatsApp Web lo rechaza; reduce tamaño.
+- **El bot no manda a Discord**: confirma `DISCORD_CHANNEL_ID` y que el bot tenga permisos de escribir.
+
+---
+
+## 🤖 Bot de Discord (intents)
+
+- Crea la app y bot en https://discord.com/developers
+- Activa **MESSAGE CONTENT INTENT** (Bot → Privileged Gateway Intents).
+- Copia el **TOKEN** al `.env`/`config.json`.
+
+---
+
+## 🔗 Invitar el bot
+
+- Usa el OAuth2 URL Generator (Scopes: `bot`, `applications.commands`)
+- Bot Permissions mínimas: `Send Messages`, `Read Message History`, `Attach Files`.
+
+---
+
+## 🧰 PM2 (producción)
+
+```bash
+npm i -g pm2
+pm2 start src/index.js --name wa-discord-bridge
+pm2 save
+pm2 startup
+```
+
+---
+
 ## 📜 Licencia
 
 Este proyecto está bajo la **licencia MIT**.
