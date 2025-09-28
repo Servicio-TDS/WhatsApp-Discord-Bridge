@@ -42,7 +42,7 @@ Sincroniza mensajes de texto, imágenes, audios y videos en tiempo real entre am
 
 3. **Clonar el repositorio** y entrar al directorio:
    ```powershell
-   git clone https://github.com/tuusuario/whatsapp-discord-bridge.git
+   git clone https://github.com/Servicio-TDS/WhatsApp-Discord-Bridge.git
    cd whatsapp-discord-bridge
    ```
 
@@ -71,7 +71,7 @@ Sincroniza mensajes de texto, imágenes, audios y videos en tiempo real entre am
 
 4. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tuusuario/whatsapp-discord-bridge.git
+   git clone https://github.com/Servicio-TDS/WhatsApp-Discord-Bridge.git
    cd whatsapp-discord-bridge
    ```
 
