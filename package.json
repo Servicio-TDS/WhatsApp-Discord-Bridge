@@ -1,0 +1,24 @@
+{
+  "name": "whatsapp-discord-bridge",
+  "version": "1.0.0",
+  "description": "Puente bidireccional entre un grupo de WhatsApp y un canal de Discord.",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "lint": "eslint .",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "mime-types": "^2.1.35",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "prettier": "^3.3.3"
+  }
+}
