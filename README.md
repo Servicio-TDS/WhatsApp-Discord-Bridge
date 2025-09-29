@@ -108,9 +108,9 @@ cp config.template.json config.json
 ```json
 {
   "DISCORD_TOKEN": "TU_TOKEN_DISCORD",
-  "DISCORD_CHANNEL_ID": "123456789012345678",
-  "WA_GROUP_NAME": "Los talentos",
-  "WA_GROUP_ID": "120363039030493956@g.us",
+  "DISCORD_CHANNEL_ID": "ID_CANAL_DE_DISCORD",
+  "WA_GROUP_NAME": "NOMBRE_GRUPO",
+  "WA_GROUP_ID": "ID_GRUPO",
   "TAG_FROM_WA": "📲 [WA]",
   "TAG_FROM_DS": "💻 [Discord]",
   "MAX_MEDIA_BYTES": 15728640
