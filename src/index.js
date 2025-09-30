@@ -5,6 +5,16 @@ const { createDiscordClient } = require("./discord");
 const { createWhatsAppClient } = require("./whatsapp");
 const { registerWAtoDS, registerDStoWA } = require("./bridge");
 
+//Opcional para Render
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type':'text/plain'});
+  res.end('OK');
+}).listen(PORT, '0.0.0.0', () => {
+  console.log('Health server on port', PORT);
+});
+
 // Validar config
 validate();
 
@@ -38,3 +48,4 @@ function shutdown(code = 0) {
 }
 process.on("SIGINT", () => shutdown(0));
 process.on("SIGTERM", () => shutdown(0));
+
